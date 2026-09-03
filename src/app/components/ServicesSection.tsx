@@ -115,10 +115,6 @@ export default function ServicesSection() {
                 {service?.desc}
               </p>
               <div className="mt-4 flex items-center gap-1 text-primary group-hover:text-white/90 text-sm font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-200">
-                Learn More
-                <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M5 12h14M12 5l7 7-7 7" />
-                </svg>
               </div>
             </div>
           ))}
@@ -136,6 +132,6 @@ export default function ServicesSection() {
           </a>
         </div>
       </div>
-    </section>
+    </section >
   );
 }
