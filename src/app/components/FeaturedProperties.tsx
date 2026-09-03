@@ -5,97 +5,67 @@ import Link from 'next/link';
 import AppImage from '@/components/ui/AppImage';
 
 const properties = [
-{
-  id: 1,
-  name: 'Green Valley Residential Plot',
-  location: 'Dhawari, Satna',
-  price: '₹12.5 Lakh',
-  area: '2400 Sq.ft',
-  roadWidth: '30 ft Road',
-  category: 'Residential',
-  image: "https://img.rocket.new/generatedImages/rocket_gen_img_1d1f5eda2-1776279743397.png",
-  imageAlt: 'Flat open residential land plot with clear boundary markings in bright daylight, green surroundings',
-  verified: true,
-  featured: true,
-  amenities: ['Water', 'Electricity', 'Road Access'],
-  description: 'Prime residential plot in developing area with clear title and legal documentation.'
-},
-{
-  id: 2,
-  name: 'Commercial Corner Plot',
-  location: 'Main Road, Satna',
-  price: '₹45 Lakh',
-  area: '5000 Sq.ft',
-  roadWidth: '60 ft Road',
-  category: 'Commercial',
-  image: "https://img.rocket.new/generatedImages/rocket_gen_img_1eaccd3d3-1765303391585.png",
-  imageAlt: 'Wide commercial corner land plot on busy main road with clear visibility and high footfall area',
-  verified: true,
-  featured: true,
-  amenities: ['Water', 'Electricity', 'Highway Access', 'Corner Plot'],
-  description: 'High visibility commercial land on main road, ideal for showroom or commercial complex.'
-},
-{
-  id: 3,
-  name: 'Agricultural Land – Fertile',
-  location: 'Ramnagar, Satna',
-  price: '₹8 Lakh/Acre',
-  area: '3 Acres',
-  roadWidth: '20 ft Road',
-  category: 'Agricultural',
-  image: "https://img.rocket.new/generatedImages/rocket_gen_img_1ae1933df-1781417520026.png",
-  imageAlt: 'Lush green agricultural farmland with rows of crops under clear blue sky in Madhya Pradesh',
-  verified: true,
-  featured: false,
-  amenities: ['Bore Well', 'Canal Water', 'Farm Road'],
-  description: 'Fertile agricultural land with canal irrigation facility and black soil.'
-},
-{
-  id: 4,
-  name: 'Farm House Land',
-  location: 'Maihar Road, Satna',
-  price: '₹18 Lakh',
-  area: '4000 Sq.ft',
-  roadWidth: '40 ft Road',
-  category: 'Farm House',
-  image: "https://images.unsplash.com/photo-1641060872876-02c63ecd0e38",
-  imageAlt: 'Scenic farmhouse land plot surrounded by trees and greenery with mountain view in background',
-  verified: true,
-  featured: false,
-  amenities: ['Scenic View', 'Water', 'Electricity', 'Gated Access'],
-  description: 'Beautiful farm house plot surrounded by greenery, perfect for weekend retreat.'
-},
-{
-  id: 5,
-  name: 'Investment Plot – Near Highway',
-  location: 'NH-30, Satna',
-  price: '₹22 Lakh',
-  area: '3200 Sq.ft',
-  roadWidth: 'NH-30 Frontage',
-  category: 'Investment',
-  image: "https://img.rocket.new/generatedImages/rocket_gen_img_1f5bf5666-1766710683578.png",
-  imageAlt: 'Prime highway-facing land plot with clear road frontage and high development potential near national highway',
-  verified: true,
-  featured: true,
-  amenities: ['Highway Frontage', 'High Growth Zone', 'Water', 'Power'],
-  description: 'High ROI investment plot with national highway frontage, 3x growth potential in 5 years.'
-},
-{
-  id: 6,
-  name: 'Affordable Residential Plot',
-  location: 'New Colony, Satna',
-  price: '₹6.5 Lakh',
-  area: '1500 Sq.ft',
-  roadWidth: '24 ft Road',
-  category: 'Residential',
-  image: "https://img.rocket.new/generatedImages/rocket_gen_img_1902373b1-1778338412915.png",
-  imageAlt: 'Affordable residential plot in new colony with clear survey marks and nearby infrastructure development',
-  verified: true,
-  featured: false,
-  amenities: ['Water', 'Electricity', 'Near School'],
-  description: 'Budget-friendly residential plot in upcoming township with all basic amenities.'
-}];
-
+  {
+    id: 1,
+    name: 'Unchehara Residential Plot',
+    location: 'Unchehara, Satna',
+    price: '₹450–₹500 / Sq.ft',
+    area: '2400 Sq.ft',
+    roadWidth: '40 m from Highway',
+    category: 'Residential',
+    image: "https://img.rocket.new/generatedImages/rocket_gen_img_1d1f5eda2-1776279743397.png",
+    imageAlt: 'Residential land plot in Unchehara near railway station and highway',
+    verified: true,
+    featured: true,
+    amenities: ['Near Railway Station', 'Highway Access', 'Road Access'],
+    description: 'Residential plot in Unchehara, located near the railway station and approximately 40 meters from the highway.'
+  },
+  {
+    id: 2,
+    name: 'Unchehara Maihar Main Road Plot',
+    location: 'Unchehara Maihar  Main Road, Satna',
+    price: '₹800 / Sq.ft',
+    area: '5000 Sq.ft',
+    roadWidth: 'Main Road',
+    category: 'Commercial',
+    image: "https://img.rocket.new/generatedImages/rocket_gen_img_1eaccd3d3-1765303391585.png",
+    imageAlt: 'Main road property plot in Unchehara',
+    verified: true,
+    featured: true,
+    amenities: ['Main Road', 'Water', 'Electricity', 'Road Access'],
+    description: 'Prime property located on Unchehara Main Road, suitable for commercial or investment purposes.'
+  },
+  {
+    id: 3,
+    name: 'Jignahat Unchehara Main Road Plot',
+    location: 'Jignahat Unchehara, Satna',
+    price: '₹650 / Sq.ft',
+    area: '100 ft Frontage',
+    roadWidth: 'Main Road',
+    category: 'Commercial',
+    image: "https://img.rocket.new/generatedImages/rocket_gen_img_1ae1933df-1781417520026.png",
+    imageAlt: 'Main road plot at Jignahat Unchehara',
+    verified: true,
+    featured: true,
+    amenities: ['Main Road', '100 ft Frontage', 'High Visibility'],
+    description: 'Main road property in Jignahat Unchehara with approximately 100 ft frontage.'
+  },
+  {
+    id: 4,
+    name: 'Jignahat Unchehara Premium Plot',
+    location: 'Jignahat Unchehara, Satna',
+    price: '₹1,500 / Sq.ft',
+    area: 'Available on Request',
+    roadWidth: 'Main Road',
+    category: 'Premium',
+    image: "https://images.unsplash.com/photo-1641060872876-02c63ecd0e38",
+    imageAlt: 'Premium land plot on main road in Jignahat Unchehara',
+    verified: true,
+    featured: true,
+    amenities: ['Main Road', 'Prime Location', 'High Visibility'],
+    description: 'Premium property available on the main road at Jignahat Unchehara.'
+  }
+];
 
 const categoryColors: Record<string, string> = {
   Residential: 'bg-primary/10 text-primary',
@@ -145,7 +115,7 @@ export default function FeaturedProperties() {
           <Link
             href="/properties"
             className="btn-primary whitespace-nowrap self-start sm:self-auto">
-            
+
             View All Properties →
           </Link>
         </div>
@@ -153,20 +123,20 @@ export default function FeaturedProperties() {
         {/* Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {properties.map((prop, i) =>
-          <div
-            key={prop.id}
-            className={`animate-on-scroll animate-fade-up card-hover bg-card rounded-3xl overflow-hidden shadow-md border border-border group`}
-            style={{ animationDelay: `${i * 80}ms` }}>
-            
+            <div
+              key={prop.id}
+              className={`animate-on-scroll animate-fade-up card-hover bg-card rounded-3xl overflow-hidden shadow-md border border-border group`}
+              style={{ animationDelay: `${i * 80}ms` }}>
+
               {/* Image */}
               <div className="relative h-48 overflow-hidden">
                 <AppImage
-                src={prop.image}
-                alt={prop.imageAlt}
-                fill
-                className="object-cover transition-transform duration-500 group-hover:scale-108"
-                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw" />
-              
+                  src={prop.image}
+                  alt={prop.imageAlt}
+                  fill
+                  className="object-cover transition-transform duration-500 group-hover:scale-108"
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw" />
+
                 {/* Gradient on image */}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
                 {/* Badges */}
@@ -175,16 +145,16 @@ export default function FeaturedProperties() {
                     {prop.category}
                   </span>
                   {prop.verified &&
-                <span className="verified-badge flex items-center gap-1">
+                    <span className="verified-badge flex items-center gap-1">
                       ✅ Verified
                     </span>
-                }
+                  }
                 </div>
                 {prop.featured &&
-              <div className="absolute top-3 right-3">
+                  <div className="absolute top-3 right-3">
                     <span className="text-xs font-bold bg-accent text-white px-2.5 py-1 rounded-full">⭐ Featured</span>
                   </div>
-              }
+                }
                 {/* Price */}
                 <div className="absolute bottom-3 left-3">
                   <span className="glass-dark text-white font-bold text-base px-3 py-1 rounded-xl">
@@ -210,34 +180,34 @@ export default function FeaturedProperties() {
 
                 <div className="flex flex-wrap gap-1.5 mb-4">
                   {prop.amenities.slice(0, 3).map((a) =>
-                <span key={a} className="text-xs bg-muted text-muted-foreground px-2 py-0.5 rounded-full">
+                    <span key={a} className="text-xs bg-muted text-muted-foreground px-2 py-0.5 rounded-full">
                       {a}
                     </span>
-                )}
+                  )}
                 </div>
 
                 {/* Actions */}
                 <div className="flex gap-2 flex-wrap">
                   <Link
-                  href="/property-detail"
-                  className="flex-1 text-center text-sm font-semibold bg-primary text-white py-2 rounded-xl hover:bg-primary/90 transition-colors">
-                  
+                    href="/property-detail"
+                    className="flex-1 text-center text-sm font-semibold bg-primary text-white py-2 rounded-xl hover:bg-primary/90 transition-colors">
+
                     View Details
                   </Link>
                   <a
-                  href={`https://wa.me/918462097970?text=Hello%20Jitendra%20Roy%20Land%20Brokers%2C%20I%20am%20interested%20in%20${encodeURIComponent(prop.name)}%20at%20${encodeURIComponent(prop.location)}.`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="px-3 py-2 bg-green-500 text-white rounded-xl hover:bg-green-600 transition-colors text-sm"
-                  aria-label="WhatsApp inquiry">
-                  
+                    href={`https://wa.me/918462097970?text=Hello%20Jitendra%20Roy%20Land%20Brokers%2C%20I%20am%20interested%20in%20${encodeURIComponent(prop.name)}%20at%20${encodeURIComponent(prop.location)}.`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-3 py-2 bg-green-500 text-white rounded-xl hover:bg-green-600 transition-colors text-sm"
+                    aria-label="WhatsApp inquiry">
+
                     💬
                   </a>
                   <a
-                  href="tel:+918462097970"
-                  className="px-3 py-2 bg-blue-500 text-white rounded-xl hover:bg-blue-600 transition-colors text-sm"
-                  aria-label="Call now">
-                  
+                    href="tel:+918462097970"
+                    className="px-3 py-2 bg-blue-500 text-white rounded-xl hover:bg-blue-600 transition-colors text-sm"
+                    aria-label="Call now">
+
                     📞
                   </a>
                 </div>
