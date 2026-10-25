@@ -186,24 +186,16 @@ export default function WhyChooseUs() {
 
       <div
         className="
+          site-container
           relative
-          mx-auto
-          max-w-[1550px]
-          px-5
           py-12
-
-          sm:px-8
           sm:py-14
 
-          md:px-10
           md:py-16
 
           lg:min-h-[830px]
           lg:overflow-hidden
-          lg:px-12
           lg:py-0
-
-          xl:px-[68px]
         "
       >
         {/* =======================================================

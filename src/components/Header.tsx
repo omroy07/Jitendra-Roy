@@ -28,15 +28,15 @@ const navItems = [
   },
   {
     label: 'Services',
-    href: '/#services',
+    href: '/services',
   },
   {
     label: 'Our Expertise',
-    href: '/#our-expertise',
+    href: '/ourexpertise',
   },
   {
     label: 'About',
-    href: '/#about',
+    href: '/about',
   },
   {
     label: 'Contact',
@@ -124,10 +124,6 @@ export default function Header() {
       return pathname === '/' && activeHash === '';
     }
 
-    if (href.startsWith('/#')) {
-      return pathname === '/' && activeHash === href.slice(1);
-    }
-
     return pathname.startsWith(href);
   };
 
@@ -161,15 +157,11 @@ export default function Header() {
       >
         <div
           className="
-            mx-auto
+            site-container
             flex
             h-[72px]
-            max-w-7xl
             items-center
             justify-between
-            px-4
-            sm:px-6
-            lg:px-8
           "
         >
           {/* =================================================
@@ -197,7 +189,7 @@ export default function Header() {
               priority
               className="
                 h-auto
-                w-[150px]
+                w-[min(150px,42vw)]
                 object-contain
                 sm:w-[150px]
                 lg:w-[180px]

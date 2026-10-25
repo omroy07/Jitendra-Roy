@@ -261,16 +261,8 @@ export default function ServicesSection() {
 
       <div
         className="
+          site-container
           relative
-          mx-auto
-          max-w-[1400px]
-          px-5
-
-          sm:px-8
-
-          lg:px-10
-
-          xl:px-12
         "
       >
         {/* ===================================================
@@ -915,7 +907,7 @@ export default function ServicesSection() {
             {/* CTA BUTTON */}
 
             <Link
-              href="/contact"
+              href="/#contact"
               className="
                 group
                 inline-flex

@@ -126,16 +126,8 @@ export default function AboutSection() {
 
       <div
         className="
+          site-container
           relative
-          mx-auto
-          max-w-[1380px]
-          px-5
-
-          sm:px-8
-
-          lg:px-10
-
-          xl:px-12
         "
       >
 

@@ -89,17 +89,17 @@ export default function HeroSection() {
               flex
               items-center
               bg-[#fafcf9]
-              px-5
+              px-4
               py-10
-              text-center
-              sm:px-8
+              text-left
+              sm:px-5
               sm:py-12
-              md:px-10
+              md:px-5
               md:py-14
               lg:px-0
               lg:py-12
               lg:pr-10
-              lg:pl-[5%]
+              lg:pl-[max(1.5rem,calc((100vw-1240px)/2+1.5rem))]
               lg:text-left
               xl:pr-16
             "
@@ -222,7 +222,7 @@ export default function HeroSection() {
 
               <div
                 className="
-                  mx-auto
+                  lg:mx-0
                   mt-6
                   flex
                   w-full
@@ -237,7 +237,7 @@ export default function HeroSection() {
               >
 
                 <Link
-                  href="/expertise"
+                  href="/ourexpertise"
                   className="
                     group
                     inline-flex

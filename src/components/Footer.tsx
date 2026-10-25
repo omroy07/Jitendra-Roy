@@ -13,9 +13,10 @@ import Image from 'next/image';
 const quickLinks = [
   { label: 'Home', href: '/' },
   { label: 'Properties', href: '/properties' },
-  { label: 'Services', href: '#services' },
-  { label: 'About Us', href: '#about' },
-  { label: 'Contact', href: '#contact' },
+  { label: 'Services', href: '/services' },
+  { label: 'Our Expertise', href: '/ourexpertise' },
+  { label: 'About Us', href: '/about' },
+  { label: 'Contact', href: '/#contact' },
 ];
 
 const services = [
@@ -34,7 +35,7 @@ export default function Footer() {
   return (
     <footer className="bg-primary text-white">
 
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div className="site-container">
 
         {/* ================================================== */}
         {/* MAIN FOOTER */}
@@ -163,12 +164,12 @@ export default function Footer() {
               {services.map((service) => (
                 <li key={service}>
 
-                  <a
-                    href="#services"
+                  <Link
+                    href="/services"
                     className="text-sm text-white transition-colors duration-200 hover:text-white"
                   >
                     {service}
-                  </a>
+                  </Link>
 
                 </li>
               ))}

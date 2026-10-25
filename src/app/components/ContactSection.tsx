@@ -198,7 +198,7 @@ export default function ContactSection() {
         />
       </div>
 
-      <div className="relative mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
+      <div className="site-container relative">
         {/* Section heading */}
         <div className="mb-10 max-w-2xl">
           <div className="mb-3 flex items-center gap-3">
